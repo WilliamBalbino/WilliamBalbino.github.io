@@ -1,15 +1,15 @@
-		<section>
+<section>
 
-			<div>
-				<h1 class="title">Resumo</h1>
-				<div class="content">
-					<ul>
-						<li ng-repeat="paragrafo in resumo">{{paragrafo}}</li>
-					</ul>			
-					
-				</div>
-
+	<div>
+		<h1 class="title">Resumo</h1>
+		<div class="content">
+			<ul>
+				<li ng-repeat="paragrafo in resumo">{{paragrafo}}</li>
+				</ul>			
+				
 			</div>
+
+		</div>
 			
 		</section>
 		
@@ -42,3 +42,49 @@
 			</div>
 			
 		</section>
+
+	<section>
+
+	<div>
+		<h1 class="title">Solicitação de orçamento</h1>
+			<div class="content">
+					
+				<form>
+					<label>Titulo</label>
+					<input type="text" name="titulo" ng-model="orcamento.titulo">
+
+					<label>Contatos</label>
+					<input type="text" name="contatos" ng-model="orcamento.contatos">
+					
+					<label>Descriçao</label>
+					<input type="text" name="descricao" ng-model="orcamento.descricao">
+					<br><br>
+					{{orcamento}}
+					<button ng-click="solicitarOrcamento(orcamento)">Solicitar</button>
+				</form>
+
+			</div>
+
+	</div>
+			
+		</section>
+
+		<section>
+
+	<div>
+		<h1 class="title">Orçamentos</h1>
+			<div class="content">
+				<ol>	
+					<li ng-repeat="orcamento in orcamentos">
+						<span>{{orcamento.titulo}}</span>,
+						<span>{{orcamento.contatos}}</span>,
+						<span>{{orcamento.descricao}}</span>
+					</li>
+				</ol>		
+			</div>
+
+	</div>
+			
+		</section>
+
+

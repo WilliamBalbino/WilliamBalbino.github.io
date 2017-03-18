@@ -1,82 +1,43 @@
-
-
 <!DOCTYPE html>
 
-<html>
+<html ng-app="sitePessoal">
 
 	<head>
 		
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>William Balbino</title>
-		<link href="style.css" rel="stylesheet">
+		<link href="styles/all.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		
-	
 	</head>
 	
-	<body>
+	<body ng-controller="mainController">
 
 		<header>
-			<img id="img-cabecalho" class="profile-picture">
-			<h1 id="nome-cabecalho"></h1>	
-			<h3 id="cargo-cabecalho"></h3>
+			<img class="profile-picture" ng-src={{foto}}>
+			<h1>{{nome}}</h1>	
+			<h3>{{cargo}}</h3>
 		</header>
 
-		<section>
-
-			<div>
-				<h1 class="title">Acadêmico</h1>
-				<div class="content">
-					<p>
-						Graduando do 8º período de Sistemas de Informação pela Unifacisa.
-					</p>
-					
-
-
-				</div>
-
-			</div>
-			
-		</section>
-		
-		<section>
-
-			<div>
-				<h1>Curso</h1>
-				<div class="content">
-					<p>
-						Jornada de cursos de desenvolvimento WEB LTI
-					</p>
-					
-				</div>
-
-			</div>
-			
-		</section>
-		
-		<section>
-
-			<div>
-				<h1>Resumo</h1>
-				<div class="content">
-					<p>
-						ASDF
-					</p>
-					
-				</div>
-
-			</div>
-			
-		</section>
+		<ng-view></ng-view>
 
 		<footer>
-			Copyright &copy; William Balbino - 2017	
+			Copyright &copy; {{nome}} - {{ano}}
 		</footer>
-		
-		<script src="script.js"></script>
-		
-		
+
+		<!-- Libraries -->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
+		<!-- Scripts -->
+
+		<script src="scripts/app.js"></script>
+
+		<script src="scripts/app.config.js"></script>
+				
 	</body>
 
 </html>

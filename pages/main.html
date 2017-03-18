@@ -1,0 +1,44 @@
+		<section>
+
+			<div>
+				<h1 class="title">Resumo</h1>
+				<div class="content">
+					<ul>
+						<li ng-repeat="paragrafo in resumo">{{paragrafo}}</li>
+					</ul>			
+					
+				</div>
+
+			</div>
+			
+		</section>
+		
+		<section>
+
+			<div>
+				<h1>Curso</h1>
+				<div class="content">
+					<ul>
+						<li ng-repeat="informacao in curso">{{informacao.descricao}}<b>{{informacao.data}}</b></li>
+					</ul>
+					
+				</div>
+
+			</div>
+			
+		</section>
+		
+		<section>
+
+			<div>
+				<h1>Acadêmico</h1>
+				<div class="content">
+					<ul>
+						<li ng-repeat="informacao in academico">{{informacao}}</li>
+					</ul>
+					
+				</div>
+
+			</div>
+			
+		</section>

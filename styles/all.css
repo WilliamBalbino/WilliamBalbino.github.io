@@ -1,0 +1,51 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	background-color:#FFEBEE; 
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+
+header{
+	background-color: #B71C1C;
+	text-align: center; 
+	padding: 15px;
+	color: white;
+
+}
+
+	header .profile-picture{
+		width: 125px;
+		height: 125px;
+		border-radius: 50%;
+
+
+	}
+
+
+section{
+	background-color:#FFCDD2;
+	padding: 16px;
+	margin: 10px;
+	border-radius: 25px;
+}
+
+	section .title{
+		
+	}
+	
+	section .content{
+		color: #757575;
+	}
+
+footer{
+	background-color:#B71C1C; 
+	padding: 15px;
+	text-align: center;
+	color: white;
+
+}
